@@ -23,9 +23,6 @@ class adminController extends Controller
 
 
 
-
-
-
 public function add_item(Request $request)
 {
      if ($request->isMethod('post')) {
