@@ -21,6 +21,9 @@ class adminController extends Controller
         return "done";
     }
 
+
+
+
 public function add_item(Request $request)
 {
      if ($request->isMethod('post')) {
@@ -32,21 +35,10 @@ public function add_item(Request $request)
 
 }
 return view('item.add'); //momkn n return list items lma n3mlha
+return view('item.add')>with('succes', 'Data has been successfully sent!'); //momkn n return list items lma n3mlha
 
 //return redirect('/admin/panel/')->with('succes', 'Data has been successfully sent!');
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
